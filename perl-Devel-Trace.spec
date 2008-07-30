@@ -1,6 +1,6 @@
 %define module Devel-Trace
 %define version 0.10
-%define release %mkrel 3
+%define release %mkrel 5
 
 Summary:	%{module} module for perl
 Name:		perl-%{module}
