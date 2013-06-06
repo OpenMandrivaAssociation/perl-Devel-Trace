@@ -1,15 +1,14 @@
 %define upstream_name    Devel-Trace
-%define upstream_version 0.11
-
+%define upstream_version 0.12
 Name:		perl-%{upstream_name}
-Version:	%perl_convert_version %{upstream_version}
-Release:	2
+Version:	%perl_convert_version 0.12
+Release:	1
 
 Summary:	A debugging module that prints out each line before it is executed
 License:	GPL+ or Artistic
 Group:		Development/Perl
 Url:		http://search.cpan.org/dist/%{upstream_name}/
-Source0:	http://www.cpan.org/modules/by-module/Devel/%{upstream_name}-%{upstream_version}.tar.bz2
+Source0:	http://www.cpan.org/modules/by-module/Devel/Devel-Trace-0.12.tar.gz
 
 BuildRequires:	perl-devel
 BuildArch:	noarch
@@ -69,4 +68,5 @@ echo "" | make test
 
 * Fri May 14 2004 Rafael Garcia-Suarez <rgarciasuarez@mandrakesoft.com> 0.10-1mdk
 - Initial mdk release
+
 
