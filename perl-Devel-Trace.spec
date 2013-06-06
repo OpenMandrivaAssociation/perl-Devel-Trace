@@ -1,6 +1,5 @@
 %define upstream_name    Devel-Trace
-%define upstream_version 0.11
-
+%define upstream_version 0.12
 Name:		perl-%{upstream_name}
 Version:	%perl_convert_version 0.12
 Release:	1
