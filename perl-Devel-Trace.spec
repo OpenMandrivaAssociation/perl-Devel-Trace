@@ -2,7 +2,7 @@
 %define upstream_version 0.12
 Name:		perl-%{upstream_name}
 Version:	%perl_convert_version 0.12
-Release:	1
+Release:	2
 
 Summary:	A debugging module that prints out each line before it is executed
 License:	GPL+ or Artistic
