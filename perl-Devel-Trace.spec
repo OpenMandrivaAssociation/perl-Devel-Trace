@@ -1,13 +1,12 @@
 %define upstream_name    Devel-Trace
-%define upstream_version 0.12
 Name:		perl-%{upstream_name}
-Version:	%perl_convert_version 0.12
-Release:	3
+Version:	0.12
+Release:	4
 
 Summary:	A debugging module that prints out each line before it is executed
 License:	GPL+ or Artistic
 Group:		Development/Perl
-Url:		https://search.cpan.org/dist/%{upstream_name}/
+Url:		https://metacpan.org/dist/%{upstream_name}/
 Source0:	http://www.cpan.org/modules/by-module/Devel/Devel-Trace-0.12.tar.gz
 
 BuildRequires:	make
@@ -19,7 +18,7 @@ A debugging module that prints out each line before it is executed
 (like sh -x).
 
 %prep
-%setup -q -n %{upstream_name}-%{upstream_version}
+%setup -q -n %{upstream_name}-%{version}
 
 %build
 perl Makefile.PL INSTALLDIRS=vendor
@@ -43,9 +42,7 @@ echo "" | make test
 
 * Sat Aug 01 2009 Jérôme Quelin <jquelin@mandriva.org> 0.100.0-1mdv2011.0
 + Revision: 406983
-- rebuild using %%perl_convert_version
-
-* Thu Jul 31 2008 Thierry Vignaud <tv@mandriva.org> 0.10-5mdv2009.0
+- rebuild using %0.12 Thu Jul 31 2008 Thierry Vignaud <tv@mandriva.org> 0.10-5mdv2009.0
 + Revision: 256672
 - rebuild
 
